@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light"><title>物理公式背诵卡 · 手机版</title>
+<style>
+:root{--bg:#f4f6f1;--ink:#193a34;--muted:#5e7269;--line:#dce5dc;--green:#17684c;--soft:#eaf3e9;--orange:#984828;--warm:#fff3e9;--blue:#2d5879;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Microsoft YaHei","PingFang SC",system-ui,sans-serif}main{max-width:1160px;padding:46px 28px 55px;margin:auto}h1,h2,h3,p,dl,dd{margin:0}h1{font-size:clamp(29px,4vw,43px);line-height:1.35;letter-spacing:-1px}h2{font-size:25px}h3{font-size:19px;line-height:1.5}.eyebrow{font-size:12px;font-weight:700;letter-spacing:2px;color:var(--green);margin-bottom:12px}.lead{color:var(--muted);margin-top:13px;max-width:840px}.header{display:flex;align-items:center;justify-content:space-between;gap:20px}.stamp{border-left:1px solid var(--line);padding-left:24px;font-size:13px;color:var(--muted);white-space:nowrap}.stamp b{display:block;color:var(--green);font-size:18px}.toolbar{margin:27px 0 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}a,button{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.nav-link,button{border:1px solid var(--line);background:white;border-radius:6px;padding:9px 13px;font-size:13px;color:var(--ink)}.nav-link:hover,button:hover{background:var(--soft)}button:focus-visible,a:focus-visible{outline:3px solid #78ad91;outline-offset:3px}.primary{background:var(--green);color:white;border-color:var(--green);margin-left:auto}.primary:hover{background:#12543d}.mode-hint{font-size:12px;color:var(--muted);margin-bottom:22px}.memory-map{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#4b7765;border-radius:10px;overflow:hidden;margin-bottom:22px}.map-lane{background:var(--ink);padding:18px 21px;color:#f2f8ed}.map-lane strong{display:block;font-size:12px;color:#bdddba;letter-spacing:2px;margin-bottom:5px}.map-lane span{font-size:15px}.alert{background:var(--warm);border-left:3px solid #bc7046;padding:14px 18px;font-size:13px;margin-bottom:20px;color:#734128}.alert strong{font-weight:700}.section{margin-top:38px}.section-title{display:flex;align-items:baseline;justify-content:space-between;gap:15px;margin-bottom:17px}.section-title p{font-size:13px;color:var(--muted)}.section-title h2 span{font-size:13px;color:var(--green);margin-right:11px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}.formula-card{background:white;border:1px solid var(--line);border-radius:11px;overflow:hidden;break-inside:avoid}.card-head{display:flex;align-items:start;justify-content:space-between;gap:10px;padding:20px 21px 13px}.card-ref{font-size:11px;color:var(--muted);margin-bottom:4px}.number{display:inline-block;color:var(--green);font-size:12px;font-weight:700;min-width:26px;vertical-align:middle}.equations{background:var(--soft);padding:14px 20px;display:grid;gap:13px;min-height:75px;align-content:center}.equation{font:23px/1.65 "Cambria Math","Times New Roman","Microsoft YaHei",serif;overflow-wrap:anywhere}.equation small{font:11px/1.7 "Microsoft YaHei",system-ui,sans-serif;color:var(--muted);display:inline-block}.equation sub{font-size:12px}.frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.3;margin:0 4px}.frac>span{padding:1px 5px}.frac>span:first-child{border-bottom:1.5px solid currentColor}.meaning{padding:5px 21px 9px}.definition{display:grid;grid-template-columns:67px minmax(0,1fr);gap:8px;padding:12px 0;border-bottom:1px solid #e7ece7;font-size:13px}.definition:last-child{border:0}.definition dt{font:italic 20px/1.55 "Cambria Math","Microsoft YaHei",serif;color:var(--green);overflow-wrap:anywhere}.definition dd strong{font-weight:500;display:block}.definition dd span{font-size:12px;color:var(--muted);display:block;margin-top:2px}.condition{padding:13px 21px 16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.condition b{font-size:11px;color:var(--orange);display:block;margin-bottom:4px}.chant{padding:13px 21px;background:#f7f8f3;font-size:13px;color:var(--ink);font-weight:600}.chant span{font-size:10px;letter-spacing:1px;color:var(--green);display:block;font-weight:500;margin-bottom:3px}.heat .equations{background:#edf3f7}.heat .number,.heat .definition dt{color:var(--blue)}.reveal{display:none;font-size:11px;padding:5px 8px;flex-shrink:0}.selftest .reveal{display:block}.selftest .formula-card .meaning{display:none}.selftest .formula-card.revealed .meaning{display:block}.selftest .card-head h3{font-size:17px}.selftest .cards{align-items:start}.compare .cards{grid-template-columns:1fr}.compare .meaning{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.compare .equations{display:flex;flex-wrap:wrap;gap:24px}.glossary{background:white;border:1px solid var(--line);border-radius:10px;overflow:hidden}.glossary-row{display:grid;grid-template-columns:155px 1fr;gap:15px;border-bottom:1px solid var(--line);padding:15px 20px;font-size:13px}.glossary-row:last-child{border:0}.glossary-row b{color:var(--green)}.glossary-row p{color:var(--muted)}.conversion{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:9px;overflow:hidden;margin-top:17px}.conversion p{padding:15px 18px;background:white;font-size:14px}.conversion small{display:block;color:var(--muted);font-size:11px}.recite-route{margin-top:20px;border-left:3px solid var(--green);padding:4px 0 4px 18px;color:var(--muted);font-size:13px}.recite-route b{color:var(--ink)}.footer{margin-top:35px;padding-top:18px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){.cards{grid-template-columns:1fr}.stamp{display:none}.memory-map{grid-template-columns:1fr}.section-title{display:block}.section-title p{margin-top:5px}.primary{margin-left:0}.compare .meaning{display:block}.compare .equations{display:grid;gap:14px}.conversion{grid-template-columns:1fr}}
+@media(max-width:480px){main{padding:27px 16px 38px}body{font-size:15px}h2{font-size:22px}.card-head{padding:17px 16px 12px}h3{font-size:17px}.equations{padding:14px 16px}.equation{font-size:21px}.meaning{padding:4px 16px 8px}.definition{grid-template-columns:57px minmax(0,1fr);gap:6px}.definition dt{font-size:18px}.condition,.chant{padding:12px 16px}.glossary-row{grid-template-columns:1fr;gap:5px;padding:13px 16px}.toolbar{gap:6px}.nav-link,button{font-size:12px;padding:8px 10px}.footer{display:block}.footer span{display:block;margin-bottom:5px}.selftest .card-head{flex-wrap:wrap}.selftest .card-head h3{font-size:17px}}
+@media print{html{scroll-behavior:auto}body{background:white;font-size:11px}main{padding:0;max-width:none}.toolbar,.mode-hint,.reveal,.stamp{display:none!important}h1{font-size:27px}h2{font-size:19px}h3{font-size:14px}.lead{font-size:11px}.memory-map{margin-top:14px}.map-lane{padding:10px 14px}.map-lane span{font-size:12px}.alert{font-size:11px;padding:10px 13px}.cards{grid-template-columns:1fr 1fr;gap:12px}.section{margin-top:22px}.card-head{padding:12px 13px 9px}.equations{padding:10px 13px;gap:8px;min-height:50px}.equation{font-size:18px}.meaning,.selftest .meaning{display:block!important;padding:3px 13px 7px}.definition{font-size:10px;padding:8px 0;grid-template-columns:48px 1fr}.definition dt{font-size:15px}.definition dd span{font-size:9px}.condition,.chant{padding:9px 13px;font-size:10px}.compare .cards{grid-template-columns:1fr}.compare .meaning{display:grid!important}.glossary-row{font-size:11px;padding:10px 13px}.conversion p{font-size:11px}.footer{font-size:9px}.selftest .card-head h3{font-size:14px}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+@media screen {
+html{scroll-padding-top:16px;-webkit-text-size-adjust:100%}
+body{font-size:17px;line-height:1.8}
+main{max-width:760px;padding:26px 16px calc(112px + env(safe-area-inset-bottom))}
+.header{display:block}.stamp,.memory-map{display:none}
+.eyebrow{font-size:12px;letter-spacing:1px;margin-bottom:7px}
+h1{font-size:29px;line-height:1.4;letter-spacing:0}
+.lead{font-size:14px;margin-top:8px;line-height:1.8}
+.toolbar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:17px 0 14px}
+.nav-link{display:flex;justify-content:center;align-items:center;min-height:46px;padding:7px 2px;text-align:center;font-size:14px}
+.jump-wrap{display:block;margin-bottom:13px}
+.jump-wrap label{font-size:13px;color:var(--muted);display:block;margin-bottom:5px}
+#formula-jump{width:100%;min-height:48px;border:1px solid var(--line);border-radius:7px;padding:10px 12px;background:white;color:var(--ink);font:16px/1.5 "Microsoft YaHei",system-ui,sans-serif}
+#formula-jump:focus-visible{outline:3px solid #78ad91;outline-offset:2px}
+.alert{font-size:13px;line-height:1.8;padding:11px 13px;margin-bottom:15px}
+.mode-hint{font-size:12px;line-height:1.7;margin-bottom:15px}
+.section{margin-top:26px}.section-title{display:block;margin-bottom:12px}
+h2{font-size:22px}.section-title p{font-size:13px;margin-top:4px}
+.cards,.compare .cards{grid-template-columns:minmax(0,1fr);gap:16px}
+.formula-card{border-radius:10px;min-width:0;scroll-margin-top:16px}
+.card-head{padding:16px 16px 12px;flex-wrap:wrap}.card-ref{font-size:12px;line-height:1.6}
+h3,.selftest .card-head h3{font-size:19px;line-height:1.6}
+.number{font-size:12px;min-width:28px}
+.equations,.compare .equations{padding:16px;display:grid;gap:16px;min-height:75px}
+.equation{font-size:25px;line-height:1.8;overflow-wrap:anywhere}
+.equation small{display:block;font-size:12px;line-height:1.7;margin-top:3px}
+.equation sub{font-size:13px}
+.meaning{padding:4px 16px 9px}.compare .meaning{display:block}
+.definition{grid-template-columns:66px minmax(0,1fr);gap:8px;padding:13px 0;font-size:16px;line-height:1.8}
+.definition dt{font-size:22px}.definition dd span{font-size:14px;line-height:1.8;margin-top:4px;overflow-wrap:anywhere}
+.condition{padding:13px 16px 16px;font-size:14px;line-height:1.9}.condition b{font-size:12px}
+.chant{padding:13px 16px;font-size:15px;line-height:1.8}.chant span{font-size:12px}
+.reveal{min-height:44px;font-size:14px;padding:9px 13px;width:100%;margin-top:4px}
+.selftest .card-head{gap:6px}.selftest .card-head>div{width:100%}
+.glossary-row{grid-template-columns:1fr;gap:5px;padding:14px 16px;font-size:15px;line-height:1.9}
+.conversion{grid-template-columns:1fr}.conversion p{font-size:16px;padding:13px 16px}.conversion small{font-size:13px}
+.recite-route{font-size:14px;line-height:1.9}.footer{display:block;font-size:12px;line-height:1.8}.footer span{display:block;margin-bottom:6px}
+.phone-dock{display:flex;gap:9px;position:fixed;bottom:0;left:0;right:0;z-index:20;padding:10px max(12px,env(safe-area-inset-left)) calc(10px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-right));background:#f4f6f1;border-top:1px solid var(--line);box-shadow:0 -3px 15px #173a3408;justify-content:center}
+.phone-dock button,.phone-dock a{min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:7px;font-size:15px;padding:10px 12px}
+.phone-dock .primary{margin:0;flex:1;max-width:440px;white-space:normal;text-align:center}
+.phone-dock .top-link{background:white;border:1px solid var(--line);min-width:64px}
+.phone-dock #print{font-size:13px;min-width:60px;padding:10px}
+}
+@media screen and (max-width:360px){
+main{padding-left:12px;padding-right:12px}h1{font-size:26px}.nav-link{font-size:13px}
+.definition{grid-template-columns:56px minmax(0,1fr);gap:7px;font-size:15px}.definition dt{font-size:20px}
+.equation{font-size:23px}.equations{padding-left:14px;padding-right:14px}
+.phone-dock button,.phone-dock a{font-size:13px;padding-left:8px;padding-right:8px}
+}
+@media print{.phone-dock,.jump-wrap{display:none!important}}
+</style></head><body><main id="page-top">
+<header class="header"><div><div class="eyebrow">九年级物理 · 公式背诵卡</div><h1>物理公式背诵卡</h1><p class="lead">21张公式卡，逐个解释字母含义与单位。手机单列阅读，可离线背诵、自测。</p></div><div class="stamp"><b>力学 × 热学</b>适合背诵 · 可离线使用<br>配套完整试卷复习</div></header>
+<nav class="toolbar" aria-label="公式导航"><a class="nav-link" href="#mechanics">力学</a><a class="nav-link" href="#heat">热学</a><a class="nav-link" href="#compare">效率比较</a><a class="nav-link" href="#confusions">单位辨析</a></nav><div class="jump-wrap"><label for="formula-jump">快速定位公式</label><select id="formula-jump"><option value="">选择一张公式卡…</option><option value="m1">01 · 重力与质量</option><option value="m2">02 · 功与提升重物的有用功</option><option value="m3">03 · 功率：做功快慢</option><option value="m4">04 · 有用功、额外功与总功</option><option value="m5">05 · 机械效率：有用功占比</option><option value="m6">06 · 杠杆平衡条件</option><option value="m7">07 · 杆秤：两边质量乘力臂</option><option value="m8">08 · 滑轮组的距离与速度</option><option value="m9">09 · 滑轮组匀速提升的拉力</option><option value="m10">10 · 滑轮组机械效率</option><option value="m11">11 · 斜面提升的机械效率</option><option value="m12">12 · 机械能的组成</option><option value="t1">13 · 吸热与放热：比热容公式</option><option value="t2">14 · 比热容公式的变形</option><option value="t3">15 · 升温后的温度与沸点检查</option><option value="t4">16 · 燃料放热：质量型热值</option><option value="t5">17 · 燃料放热：体积型热值</option><option value="t6">18 · 供热关系与热机效率</option><option value="t7">19 · 本卷自定义K与比热容</option><option value="t8">20 · 四冲程热机：次数与转速</option><option value="c1">21 · 效率之差与相对提高率</option></select></div>
+<p class="mode-hint" id="mode-hint" aria-live="polite">背诵顺序：公式 → 每个字母是什么 → 单位 → 什么时候能用。</p>
+<div class="memory-map" aria-label="公式关系"><div class="map-lane"><strong>力学主线</strong><span>重力 → 功 → 功率 / 效率 → 杠杆、滑轮和斜面</span></div><div class="map-lane"><strong>热学主线</strong><span>温差 → 吸热 → 燃料放热 → 热机有用功与效率</span></div></div>
+<div class="alert"><strong>先统一单位：</strong>kg、m、s；J/kg配kg，J/m³配m³。</div>
+<section id="mechanics" class="section"><div class="section-title"><h2><span>01</span>力学公式</h2><p>先看对象，再让力、距离和功相互对应。</p></div><div class="cards"><article class="formula-card" id="m1">
+<header class="card-head"><div><div class="card-ref">杠杆、滑轮和提升问题的基础</div><h3><span class="number">01</span>重力与质量</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m1">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">G = mg</div><div class="equation">m = <span class="frac"><span>G</span><span>g</span></span></div></div>
+<dl class="meaning" id="meaning-m1"><div class="definition"><dt>G</dt><dd><strong>物体受到的重力</strong><span>N（牛顿）</span></dd></div><div class="definition"><dt>m</dt><dd><strong>物体的质量</strong><span>kg（千克）</span></dd></div><div class="definition"><dt>g</dt><dd><strong>重力与质量的比值</strong><span>N/kg；通常取9.8 N/kg，按题目要求可取10 N/kg</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>质量必须用kg。g的取值按题目要求；不能把重力和质量当成同一个量。</p></div>
+<div class="chant"><span>背诵句</span>重力等于质量乘g。</div>
+</article><article class="formula-card" id="m2">
+<header class="card-head"><div><div class="card-ref">第4、11、15、22题</div><h3><span class="number">02</span>功与提升重物的有用功</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m2">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">W = Fs</div><div class="equation">W<sub>有用</sub> = Gh = mgh</div></div>
+<dl class="meaning" id="meaning-m2"><div class="definition"><dt>W</dt><dd><strong>力所做的功</strong><span>J（焦耳）</span></dd></div><div class="definition"><dt>F</dt><dd><strong>对物体施加的力</strong><span>N</span></dd></div><div class="definition"><dt>s</dt><dd><strong>物体沿这个力的方向移动的距离</strong><span>m（米）</span></dd></div><div class="definition"><dt>W有用</dt><dd><strong>为完成目标所做的功；本卷提升物体时为克服重力所做的功</strong><span>J</span></dd></div><div class="definition"><dt>G</dt><dd><strong>被提升物体的重力</strong><span>N</span></dd></div><div class="definition"><dt>h</dt><dd><strong>物体竖直升高的高度</strong><span>m</span></dd></div><div class="definition"><dt>m</dt><dd><strong>被提升物体的质量</strong><span>kg</span></dd></div><div class="definition"><dt>g</dt><dd><strong>重力与质量的比值</strong><span>N/kg</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>W = Fs用于恒力且移动方向与力方向一致的情形。F与s必须对应同一个作用：拉绳力配绳端距离，物重配提升高度。</p></div>
+<div class="chant"><span>背诵句</span>谁的力，配谁的距离；提升有用功，物重乘高度。</div>
+</article><article class="formula-card" id="m3">
+<header class="card-head"><div><div class="card-ref">第7、22题</div><h3><span class="number">03</span>功率：做功快慢</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m3">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">P = <span class="frac"><span>W</span><span>t</span></span></div><div class="equation">W = Pt</div><div class="equation">P = Fv</div></div>
+<dl class="meaning" id="meaning-m3"><div class="definition"><dt>P</dt><dd><strong>功率，单位时间内做的功</strong><span>W（瓦特）；1 W = 1 J/s</span></dd></div><div class="definition"><dt>W</dt><dd><strong>在时间t内所做的功</strong><span>J</span></dd></div><div class="definition"><dt>t</dt><dd><strong>做功所用的时间</strong><span>s（秒）</span></dd></div><div class="definition"><dt>F</dt><dd><strong>与运动方向一致的力</strong><span>N</span></dd></div><div class="definition"><dt>v</dt><dd><strong>沿力方向的运动速度</strong><span>m/s（米每秒）</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>P = W/t求对应时间内的平均功率。P = Fv中的力和速度方向一致；本卷匀速拉绳时，拉力必须配绳端速度。W-t图像的斜率表示功率。</p></div>
+<div class="chant"><span>背诵句</span>功率是功除以时间；同向匀速也可力乘速度。</div>
+</article><article class="formula-card" id="m4">
+<header class="card-head"><div><div class="card-ref">第15、17、22题</div><h3><span class="number">04</span>有用功、额外功与总功</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m4">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">W<sub>总</sub> = W<sub>有用</sub> + W<sub>额外</sub></div><div class="equation">W<sub>额外</sub> = W<sub>总</sub> − W<sub>有用</sub></div></div>
+<dl class="meaning" id="meaning-m4"><div class="definition"><dt>W总</dt><dd><strong>动力对机械所做的全部功</strong><span>J</span></dd></div><div class="definition"><dt>W有用</dt><dd><strong>为完成目标需要做的功</strong><span>J</span></dd></div><div class="definition"><dt>W额外</dt><dd><strong>除有用功之外的功，如提升动滑轮、克服摩擦等</strong><span>J</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>三种功必须对应同一次工作过程。有用功由任务决定；本卷滑轮提升任务不把提升动滑轮的功算作有用功。</p></div>
+<div class="chant"><span>背诵句</span>总功分两份：有用加额外。</div>
+</article><article class="formula-card" id="m5">
+<header class="card-head"><div><div class="card-ref">第9、15、17、22题</div><h3><span class="number">05</span>机械效率：有用功占比</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m5">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">η = <span class="frac"><span>W<sub>有用</sub></span><span>W<sub>总</sub></span></span> × 100%</div></div>
+<dl class="meaning" id="meaning-m5"><div class="definition"><dt>η</dt><dd><strong>机械效率；读作“艾塔”</strong><span>没有单位，通常用百分数表示</span></dd></div><div class="definition"><dt>W有用</dt><dd><strong>机械完成目标任务的有用功</strong><span>J</span></dd></div><div class="definition"><dt>W总</dt><dd><strong>动力对机械做的总功</strong><span>J</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>分子、分母须是同一过程的功，单位一致。实际机械有额外功，效率小于100%；完全理想的模型可为100%。</p></div>
+<div class="chant"><span>背诵句</span>效率看占比：有用功在上，总功在下。</div>
+</article><article class="formula-card" id="m6">
+<header class="card-head"><div><div class="card-ref">第13、16、20题</div><h3><span class="number">06</span>杠杆平衡条件</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m6">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">F<sub>1</sub>l<sub>1</sub> = F<sub>2</sub>l<sub>2</sub></div><div class="equation">F<sub>1</sub> = <span class="frac"><span>F<sub>2</sub>l<sub>2</sub></span><span>l<sub>1</sub></span></span></div></div>
+<dl class="meaning" id="meaning-m6"><div class="definition"><dt>F₁</dt><dd><strong>动力</strong><span>N</span></dd></div><div class="definition"><dt>l₁</dt><dd><strong>动力臂：支点到动力作用线的垂直距离</strong><span>m；也可统一用cm或相同格数</span></dd></div><div class="definition"><dt>F₂</dt><dd><strong>阻力</strong><span>N</span></dd></div><div class="definition"><dt>l₂</dt><dd><strong>阻力臂：支点到阻力作用线的垂直距离</strong><span>与l₁使用相同单位</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>杠杆处于平衡状态，动力与阻力产生相反的转动效果。力臂是垂直距离，不一定等于杆长。下标1、2只用来区分动力和阻力。</p></div>
+<div class="chant"><span>背诵句</span>动力乘动力臂，等于阻力乘阻力臂。</div>
+</article><article class="formula-card" id="m7">
+<header class="card-head"><div><div class="card-ref">第20(4)题</div><h3><span class="number">07</span>杆秤：两边质量乘力臂</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m7">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">m<sub>物</sub>l<sub>物</sub> = m<sub>砣</sub>l<sub>砣</sub></div><div class="equation">m<sub>物</sub> = <span class="frac"><span>m<sub>砣</sub>l<sub>砣</sub></span><span>l<sub>物</sub></span></span></div></div>
+<dl class="meaning" id="meaning-m7"><div class="definition"><dt>m物</dt><dd><strong>待称物体的质量</strong><span>kg</span></dd></div><div class="definition"><dt>m砣</dt><dd><strong>秤砣的质量</strong><span>kg</span></dd></div><div class="definition"><dt>l物</dt><dd><strong>支点到物体重力作用线的垂直距离；水平杆秤中为支点到秤钩的距离</strong><span>m</span></dd></div><div class="definition"><dt>l砣</dt><dd><strong>支点到秤砣重力作用线的垂直距离；水平杆秤中为支点到秤砣的距离</strong><span>m</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>由杠杆平衡式两边同时约去g得到；本卷忽略秤杆与秤钩自重，杆秤水平。支点在秤纽处。下标“物、砣”标明量属于哪个对象。</p></div>
+<div class="chant"><span>背诵句</span>物质量乘物力臂，等于砣质量乘砣力臂。</div>
+</article><article class="formula-card" id="m8">
+<header class="card-head"><div><div class="card-ref">第16、17、22题</div><h3><span class="number">08</span>滑轮组的距离与速度</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m8">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">s = nh</div><div class="equation">v<sub>绳</sub> = nv<sub>物</sub></div></div>
+<dl class="meaning" id="meaning-m8"><div class="definition"><dt>n</dt><dd><strong>承担动滑轮及重物的有效承重绳段数</strong><span>没有单位，是正整数</span></dd></div><div class="definition"><dt>s</dt><dd><strong>绳子自由端移动的距离</strong><span>m</span></dd></div><div class="definition"><dt>h</dt><dd><strong>重物和动滑轮升高的高度</strong><span>m</span></dd></div><div class="definition"><dt>v绳</dt><dd><strong>绳子自由端的移动速度</strong><span>m/s</span></dd></div><div class="definition"><dt>v物</dt><dd><strong>重物和动滑轮的上升速度</strong><span>m/s</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>用于本卷这种绳不可伸长、动滑轮与重物一起运动的滑轮组。n要数承担动滑轮及重物的绳段，不是看有几个滑轮。</p></div>
+<div class="chant"><span>背诵句</span>几段绳承重，绳端就走几倍路。</div>
+</article><article class="formula-card" id="m9">
+<header class="card-head"><div><div class="card-ref">第9、17、22题</div><h3><span class="number">09</span>滑轮组匀速提升的拉力</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m9">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">F = <span class="frac"><span>G + G<sub>动</sub></span><span>n</span></span></div><div class="equation">F = <span class="frac"><span>G</span><span>n</span></span> <small>（进一步忽略动滑轮重）</small></div></div>
+<dl class="meaning" id="meaning-m9"><div class="definition"><dt>F</dt><dd><strong>绳子自由端的拉力</strong><span>N</span></dd></div><div class="definition"><dt>G</dt><dd><strong>被提升物体的重力</strong><span>N</span></dd></div><div class="definition"><dt>G动</dt><dd><strong>随物体上升的动滑轮的总重力</strong><span>N</span></dd></div><div class="definition"><dt>n</dt><dd><strong>有效承重绳段数</strong><span>没有单位</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>物体匀速上升，忽略绳重与摩擦，绳上各处张力相同。只有进一步忽略动滑轮重，才可用F = G/n。若还有吊篮等一起升高，其重力也要按题意计入。</p></div>
+<div class="chant"><span>背诵句</span>物重加动轮重，除以承重绳段数。</div>
+</article><article class="formula-card" id="m10">
+<header class="card-head"><div><div class="card-ref">第17、22题</div><h3><span class="number">10</span>滑轮组机械效率</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m10">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">η = <span class="frac"><span>Gh</span><span>Fs</span></span> × 100%</div><div class="equation">η = <span class="frac"><span>G</span><span>nF</span></span> × 100%</div><div class="equation">η = <span class="frac"><span>G</span><span>G + G<sub>动</sub></span></span> × 100% <small>（忽略绳重与摩擦）</small></div></div>
+<dl class="meaning" id="meaning-m10"><div class="definition"><dt>η</dt><dd><strong>滑轮组的机械效率</strong><span>无单位，通常用百分数</span></dd></div><div class="definition"><dt>G</dt><dd><strong>被提升物体的重力</strong><span>N</span></dd></div><div class="definition"><dt>h</dt><dd><strong>物体升高的高度</strong><span>m</span></dd></div><div class="definition"><dt>F</dt><dd><strong>绳子自由端的拉力</strong><span>N</span></dd></div><div class="definition"><dt>s</dt><dd><strong>绳子自由端移动的距离</strong><span>m，且s = nh</span></dd></div><div class="definition"><dt>n</dt><dd><strong>有效承重绳段数</strong><span>无单位</span></dd></div><div class="definition"><dt>G动</dt><dd><strong>随物体上升的动滑轮总重力</strong><span>N</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>以匀速竖直提升物体为任务。第二式由s = nh约去h得到；第三式还要求忽略绳重与摩擦，且额外功仅来自提升动滑轮。</p></div>
+<div class="chant"><span>背诵句</span>有用功用Gh，总功用Fs；数好n，再用G除以nF。</div>
+</article><article class="formula-card" id="m11">
+<header class="card-head"><div><div class="card-ref">第15题</div><h3><span class="number">11</span>斜面提升的机械效率</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m11">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">η = <span class="frac"><span>Gh</span><span>FL</span></span> × 100%</div><div class="equation">W<sub>额外</sub> = FL − Gh</div></div>
+<dl class="meaning" id="meaning-m11"><div class="definition"><dt>η</dt><dd><strong>斜面提升物体的机械效率</strong><span>无单位，通常用百分数</span></dd></div><div class="definition"><dt>G</dt><dd><strong>沿斜面被提升物体的重力</strong><span>N</span></dd></div><div class="definition"><dt>h</dt><dd><strong>斜面的竖直高度，即物体升高的高度</strong><span>m</span></dd></div><div class="definition"><dt>F</dt><dd><strong>沿斜面向上拉物体的力</strong><span>N</span></dd></div><div class="definition"><dt>L</dt><dd><strong>物体沿斜面移动的路程；从底到顶时为斜面长度</strong><span>m</span></dd></div><div class="definition"><dt>W额外</dt><dd><strong>除提升重物有用功外的功，本卷主要为克服摩擦做的功</strong><span>J</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>沿斜面匀速拉动物体，拉力平行斜面。L不是竖直高度h。题目也可能用小写l或s表示斜面路程，要按定义代入。</p></div>
+<div class="chant"><span>背诵句</span>斜面有用功是Gh，总功是拉力乘斜面路程。</div>
+</article><article class="formula-card" id="m12">
+<header class="card-head"><div><div class="card-ref">第5、8、17、18题</div><h3><span class="number">12</span>机械能的组成</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-m12">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">E<sub>机</sub> = E<sub>动</sub> + E<sub>势</sub></div></div>
+<dl class="meaning" id="meaning-m12"><div class="definition"><dt>E机</dt><dd><strong>物体的机械能</strong><span>J</span></dd></div><div class="definition"><dt>E动</dt><dd><strong>物体因运动而具有的动能</strong><span>J</span></dd></div><div class="definition"><dt>E势</dt><dd><strong>物体的势能；包括题中涉及的重力势能或弹性势能</strong><span>J</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>本卷以定性判断为主：质量一定，速度越大动能越大；高度越高重力势能越大；弹性形变越大，弹性势能通常越大。不能仅凭“动能变大”判断机械能一定变大，还要看势能。</p></div>
+<div class="chant"><span>背诵句</span>机械能是动能与势能的总和。</div>
+</article></div></section>
+<section id="heat" class="section heat"><div class="section-title"><h2><span>02</span>热学公式</h2><p>先区分吸热物体和燃料，再检查质量、热值的单位。</p></div><div class="cards"><article class="formula-card" id="t1">
+<header class="card-head"><div><div class="card-ref">第10、14、19、21题</div><h3><span class="number">13</span>吸热与放热：比热容公式</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-t1">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">Q<sub>吸</sub> = cmΔT = cm(T<sub>末</sub> − T<sub>初</sub>)</div><div class="equation">Q<sub>放</sub> = cmΔT = cm(T<sub>初</sub> − T<sub>末</sub>)</div></div>
+<dl class="meaning" id="meaning-t1"><div class="definition"><dt>Q吸</dt><dd><strong>物体升温时吸收的热量</strong><span>J</span></dd></div><div class="definition"><dt>Q放</dt><dd><strong>物体降温时放出的热量；本卡不是燃料燃烧公式</strong><span>J</span></dd></div><div class="definition"><dt>c</dt><dd><strong>物质的比热容</strong><span>J/(kg·℃)</span></dd></div><div class="definition"><dt>m</dt><dd><strong>吸热或放热物体的质量</strong><span>kg</span></dd></div><div class="definition"><dt>ΔT</dt><dd><strong>温度变化量的大小；吸热升温取末温减初温，放热降温取初温减末温</strong><span>℃</span></dd></div><div class="definition"><dt>T初</dt><dd><strong>物体变化前的初始温度</strong><span>℃</span></dd></div><div class="definition"><dt>T末</dt><dd><strong>物体变化后的最终温度</strong><span>℃</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>物质状态不变、比热容可视为不变的升温或降温过程。Δ读作“德尔塔”，表示变化量。课本也常用t、t₀表示温度；本页用T，避免与时间t混淆。</p></div>
+<div class="chant"><span>背诵句</span>热量等于比热容乘质量乘温差。</div>
+</article><article class="formula-card" id="t2">
+<header class="card-head"><div><div class="card-ref">第10、14、19、21题</div><h3><span class="number">14</span>比热容公式的变形</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-t2">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">c = <span class="frac"><span>Q</span><span>mΔT</span></span></div><div class="equation">ΔT = <span class="frac"><span>Q</span><span>cm</span></span></div><div class="equation">m = <span class="frac"><span>Q</span><span>cΔT</span></span></div></div>
+<dl class="meaning" id="meaning-t2"><div class="definition"><dt>Q</dt><dd><strong>该升温或降温过程中吸收或放出的热量大小</strong><span>J</span></dd></div><div class="definition"><dt>c</dt><dd><strong>物质的比热容</strong><span>J/(kg·℃)</span></dd></div><div class="definition"><dt>m</dt><dd><strong>吸热或放热物体的质量</strong><span>kg</span></dd></div><div class="definition"><dt>ΔT</dt><dd><strong>温度变化量的大小</strong><span>℃</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>三式都是Q = cmΔT的变形，适用条件相同。加热图像中，同m、同Q时，ΔT越小，c越大；同m、同ΔT时，Q越大，c越大。</p></div>
+<div class="chant"><span>背诵句</span>求谁就把谁单独放一边；比热容大，同样吸热升温慢。</div>
+</article><article class="formula-card" id="t3">
+<header class="card-head"><div><div class="card-ref">第21题</div><h3><span class="number">15</span>升温后的温度与沸点检查</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-t3">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">T<sub>末</sub> = T<sub>初</sub> + ΔT</div><div class="equation">ΔT<sub>实际</sub> = 100℃ − T<sub>初</sub> <small>（水已升到沸点时）</small></div></div>
+<dl class="meaning" id="meaning-t3"><div class="definition"><dt>T末</dt><dd><strong>加热后水的最终温度</strong><span>℃</span></dd></div><div class="definition"><dt>T初</dt><dd><strong>加热前水的初始温度</strong><span>℃</span></dd></div><div class="definition"><dt>ΔT</dt><dd><strong>由Q/(cm)计算出的升温量，须先检查是否达到沸点</strong><span>℃</span></dd></div><div class="definition"><dt>ΔT实际</dt><dd><strong>实际升温量；本卷水达到100℃后不再继续升温</strong><span>℃</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>第二式专用于本卷：标准大气压、普通敞口加热，初温低于100℃且水已升至100℃，仍有液态水存在。若热量不足以到沸点，仍用Q/(cm)。汽化吸热不能直接当成继续升温。</p></div>
+<div class="chant"><span>背诵句</span>先算温升，再查末温；达到沸点，继续吸热不升温。</div>
+</article><article class="formula-card" id="t4">
+<header class="card-head"><div><div class="card-ref">第1、19、23题</div><h3><span class="number">16</span>燃料放热：质量型热值</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-t4">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">Q<sub>放</sub> = mq</div><div class="equation">m = <span class="frac"><span>Q<sub>放</sub></span><span>q</span></span></div><div class="equation">q = <span class="frac"><span>Q<sub>放</sub></span><span>m</span></span></div></div>
+<dl class="meaning" id="meaning-t4"><div class="definition"><dt>Q放</dt><dd><strong>燃料完全燃烧释放的热量</strong><span>J</span></dd></div><div class="definition"><dt>m</dt><dd><strong>完全燃烧的燃料质量，不是被加热液体的质量</strong><span>kg</span></dd></div><div class="definition"><dt>q</dt><dd><strong>燃料的质量热值：1 kg燃料完全燃烧放出的热量</strong><span>J/kg</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>热值q的单位为J/kg时，燃料质量m必须用kg。完全燃烧是前提；热值由燃料种类决定，不随剩余质量或是否烧完而改变。</p></div>
+<div class="chant"><span>背诵句</span>质量乘热值，求完全燃烧放热；kg配J/kg。</div>
+</article><article class="formula-card" id="t5">
+<header class="card-head"><div><div class="card-ref">第14题天然气</div><h3><span class="number">17</span>燃料放热：体积型热值</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-t5">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">Q<sub>放</sub> = Vq</div><div class="equation">V = <span class="frac"><span>Q<sub>放</sub></span><span>q</span></span></div></div>
+<dl class="meaning" id="meaning-t5"><div class="definition"><dt>Q放</dt><dd><strong>气体燃料完全燃烧释放的热量</strong><span>J</span></dd></div><div class="definition"><dt>V</dt><dd><strong>完全燃烧的气体燃料体积</strong><span>m³（立方米）</span></dd></div><div class="definition"><dt>q</dt><dd><strong>以体积定义的热值：1 m³气体燃料完全燃烧放出的热量</strong><span>J/m³</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>只有热值以J/m³给出时才直接使用Vq，且体积状态按题目约定。此处q与J/kg形式的热值单位不同，不能直接混用数值。</p></div>
+<div class="chant"><span>背诵句</span>看见J每立方米，就用体积乘热值。</div>
+</article><article class="formula-card" id="t6">
+<header class="card-head"><div><div class="card-ref">第14、23题</div><h3><span class="number">18</span>供热关系与热机效率</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-t6">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">Q<sub>吸</sub> = Q<sub>放</sub> <small>（无热量损失且热量全部被目标吸收）</small></div><div class="equation">η<sub>热机</sub> = <span class="frac"><span>W<sub>有用</sub></span><span>Q<sub>放</sub></span></span> × 100%</div><div class="equation">W<sub>有用</sub> = η<sub>热机</sub>Q<sub>放</sub></div></div>
+<dl class="meaning" id="meaning-t6"><div class="definition"><dt>Q吸</dt><dd><strong>被加热物体吸收的热量</strong><span>J</span></dd></div><div class="definition"><dt>Q放</dt><dd><strong>燃料完全燃烧释放的总热量</strong><span>J</span></dd></div><div class="definition"><dt>W有用</dt><dd><strong>热机输出的有用机械功，如汽车克服阻力做的功</strong><span>J</span></dd></div><div class="definition"><dt>η热机</dt><dd><strong>热机将燃料放热转为有用机械功的比例</strong><span>无单位，通常用百分数；代入50%时用0.50</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>Q吸 = Q放不是普遍成立，只在题设热量全部被目标吸收时使用。热机效率的分母是燃料总放热，不是机械有用功。热机效率小于100%。</p></div>
+<div class="chant"><span>背诵句</span>热机效率：有用机械功，除以燃料总放热。</div>
+</article><article class="formula-card" id="t7">
+<header class="card-head"><div><div class="card-ref">第19(3)题</div><h3><span class="number">19</span>本卷自定义K与比热容</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-t7">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">K = <span class="frac"><span>1</span><span>c</span></span></div><div class="equation"><span class="frac"><span>K<sub>a</sub></span><span>K<sub>b</sub></span></span> = <span class="frac"><span>c<sub>b</sub></span><span>c<sub>a</sub></span></span></div></div>
+<dl class="meaning" id="meaning-t7"><div class="definition"><dt>K</dt><dd><strong>本题自定义量：单位质量物质吸收或放出1 J热量时，温度变化量对应的指标</strong><span>按质量取kg时，单位为kg·℃/J</span></dd></div><div class="definition"><dt>c</dt><dd><strong>物质的比热容</strong><span>J/(kg·℃)</span></dd></div><div class="definition"><dt>Kₐ、Kᵦ</dt><dd><strong>液体a、b各自的K值</strong><span>与K相同</span></dd></div><div class="definition"><dt>cₐ、cᵦ</dt><dd><strong>液体a、b各自的比热容</strong><span>J/(kg·℃)</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>这是本题定义下的关系，不是通用物理常量。此处大写K是物理量符号，不是温度单位“开尔文”；a、b是液体标签。比热容越大，K越小。</p></div>
+<div class="chant"><span>背诵句</span>c与K互为倒数：c大，K小。</div>
+</article><article class="formula-card" id="t8">
+<header class="card-head"><div><div class="card-ref">第12题</div><h3><span class="number">20</span>四冲程热机：次数与转速</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-t8">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">N<sub>转</sub> = 2N<sub>功</sub></div><div class="equation">N<sub>冲程</sub> = 4N<sub>功</sub></div><div class="equation">n<sub>转</sub> = 2f<sub>功</sub> × 60 = 120f<sub>功</sub></div></div>
+<dl class="meaning" id="meaning-t8"><div class="definition"><dt>N功</dt><dd><strong>同一段时间内对外做功的次数</strong><span>次</span></dd></div><div class="definition"><dt>N转</dt><dd><strong>同一段时间内飞轮转过的圈数</strong><span>转</span></dd></div><div class="definition"><dt>N冲程</dt><dd><strong>同一段时间内完成的冲程总数</strong><span>个冲程</span></dd></div><div class="definition"><dt>f功</dt><dd><strong>每秒对外做功的次数</strong><span>次/秒</span></dd></div><div class="definition"><dt>n转</dt><dd><strong>飞轮每分钟的转数，即转速</strong><span>r/min（转/分）</span></dd></div><div class="definition"><dt>60</dt><dd><strong>每分钟包含的秒数，用于从“每秒”换成“每分钟”</strong><span>60 s/min</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>适用于本卷单缸四冲程内燃机：一循环4冲程、飞轮转2圈、对外做功1次。这里n转是转速，与滑轮公式中的绳段数n不是同一个量。</p></div>
+<div class="chant"><span>背诵句</span>四冲程，两圈，一次做功；每秒换每分，再乘六十。</div>
+</article></div></section>
+<section id="compare" class="section compare"><div class="section-title"><h2><span>03</span>效率比较</h2><p>“相差多少”与“相对提高多少”是两种计算。</p></div><div class="cards"><article class="formula-card" id="c1">
+<header class="card-head"><div><div class="card-ref">第23题末问</div><h3><span class="number">21</span>效率之差与相对提高率</h3></div><button class="reveal" type="button" aria-expanded="false" aria-controls="meaning-c1">查看字母解释</button></header>
+<div class="equations" aria-label="公式"><div class="equation">Δη = η<sub>新</sub> − η<sub>原</sub></div><div class="equation">r = <span class="frac"><span>η<sub>新</sub> − η<sub>原</sub></span><span>η<sub>原</sub></span></span> × 100%</div></div>
+<dl class="meaning" id="meaning-c1"><div class="definition"><dt>η新</dt><dd><strong>改进后的效率；本卷对应氢能源汽车</strong><span>无单位，常用百分数</span></dd></div><div class="definition"><dt>η原</dt><dd><strong>原来的效率；本卷对应汽油汽车</strong><span>无单位，常用百分数</span></dd></div><div class="definition"><dt>Δη</dt><dd><strong>两种效率的差值</strong><span>效率用百分数表达时，差值用“个百分点”表述</span></dd></div><div class="definition"><dt>r</dt><dd><strong>相对于原效率的提高率</strong><span>无单位，用百分数表示</span></dd></div></dl>
+<div class="condition"><b>使用条件</b><p>差值不需要再除以原值；相对提高率必须除以原值。分子、分母中的效率使用相同表达方式。本卷“提高了多少”有歧义，要区分两种口径。</p></div>
+<div class="chant"><span>背诵句</span>问相差，直接减；问相对提高，减完再除以原来。</div>
+</article></div></section>
+<section id="confusions" class="section"><div class="section-title"><h2><span>04</span>这些符号和单位最容易混</h2><p>同一个字母在不同公式里可能有不同含义。</p></div>
+<div class="glossary">
+<div class="glossary-row"><b>W：功，还是瓦特？</b><p>在P = W/t中，W是“功”的符号，单位是J；在P = 400 W中，W是功率单位“瓦特”。看它出现在公式里，还是跟在数值后面。</p></div>
+<div class="glossary-row"><b>t与T：时间与温度</b><p>本页t表示时间，单位s；T表示温度，单位℃。课本Q = cm(t − t₀)里的t、t₀表示温度，不能当成时间。</p></div>
+<div class="glossary-row"><b>m与m：质量与米</b><p>公式G = mg中的m是质量，单位kg；数值“10 m”后的m是长度单位米。</p></div>
+<div class="glossary-row"><b>s：距离与秒</b><p>W = Fs中的s是距离，单位m；“30 s”中的s是时间单位秒。不要把字母符号与单位混为一谈。</p></div>
+<div class="glossary-row"><b>m、Q：看属于谁</b><p>Q = cmΔT中的m是吸热或放热物体的质量；Q = mq中的m是燃料质量。两者通常不是同一个质量。Q吸和Q放的下标说明热量是吸收还是放出。</p></div>
+<div class="glossary-row"><b>η与P：占比与快慢</b><p>η表示效率，看有用部分占总量多少；P表示功率，看单位时间做功多少。效率没有单位，功率单位是W。</p></div>
+<div class="glossary-row"><b>n：绳段数与转速</b><p>s = nh中的n是承重绳段数；本页n转是飞轮转速，单位r/min。定义不同，不能串用。</p></div>
+<div class="glossary-row"><b>下标与Δ</b><p>“有用、总、额外、初、末、绳、物、动”等下标用于标明对象或状态；数字1、2用于区分两个量。Δ表示“变化量”，不是另一个要相乘的字母。</p></div>
+<div class="glossary-row"><b>百分数怎么代入？</b><p>50% = 0.50。W有用 = ηQ放中把η代为0.50，不能代成50。效率公式中的“×100%”是百分数表达；不要再多乘一次100。</p></div>
+</div>
+<div class="conversion" aria-label="常用单位换算"><p>1 kg = 1000 g<small>300 g = 0.3 kg；2 kg = 2000 g</small></p><p>1 min = 60 s<small>算功率前，分钟要换成秒</small></p><p>1 W = 1 J/s<small>1 kW = 1000 W；1 kJ = 1000 J</small></p><p>1 m = 100 cm<small>算功时用m；杠杆两边可统一用cm</small></p><p>1 L = 10⁻³ m³<small>体积型热值用J/m³，体积就配m³</small></p><p>ΔT = T末 − T初<small>用于升温；“升高到”不等于“升高了”</small></p></div>
+<div class="recite-route"><b>一张卡的背诵方法：</b>先读公式和背诵句 → 不看解释说出全部字母及单位 → 说出适用条件 → 开启自测，逐张检查。优先背熟：W = Fs、P = W/t、杠杆平衡、机械效率、Q = cmΔT、Q = mq。</div>
+</section>
+<footer class="footer"><span>依据本次试卷涉及的知识整理，含解题常用变形。仅用于公式背诵与复习。</span><span>本页未列高中动能定量公式，机械能按本卷要求作定性判断。</span></footer>
+</main><div class="phone-dock" aria-label="背诵工具"><a class="top-link" href="#page-top">目录</a><button id="mode" class="primary" type="button" aria-pressed="false">开始自测：遮住解释</button><button id="print" type="button">打印</button></div><script>
+(() => {
+const mode = document.getElementById('mode');
+const hint = document.getElementById('mode-hint');
+const cards = [...document.querySelectorAll('.formula-card')];
+mode.addEventListener('click', () => {
+ const on = !document.body.classList.contains('selftest');
+ document.body.classList.toggle('selftest', on);
+ mode.setAttribute('aria-pressed', String(on));
+ mode.textContent = on ? '退出自测：显示解释' : '开始自测：遮住解释';
+ hint.textContent = on ? '自测中：先说出公式中每个字母的含义和单位，再点击“查看字母解释”核对。' : '背诵顺序：公式 → 每个字母是什么 → 单位 → 什么时候能用。';
+ cards.forEach(card => { card.classList.remove('revealed'); const b=card.querySelector('.reveal'); b.textContent='查看字母解释'; b.setAttribute('aria-expanded','false'); });
+});
+cards.forEach(card => card.querySelector('.reveal').addEventListener('click', event => {
+ const open = card.classList.toggle('revealed');
+ event.currentTarget.textContent = open ? '重新遮住解释' : '查看字母解释';
+ event.currentTarget.setAttribute('aria-expanded', String(open));
+}));
+document.getElementById('print').addEventListener('click', () => window.print());
+document.getElementById('formula-jump').addEventListener('change', event => {
+ const target=document.getElementById(event.target.value);
+ if(target){target.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});}
+});
+})();
+</script></body></html>
